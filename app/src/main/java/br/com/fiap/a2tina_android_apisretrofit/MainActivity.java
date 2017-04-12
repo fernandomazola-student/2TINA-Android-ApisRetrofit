@@ -17,6 +17,8 @@ public class MainActivity extends AppCompatActivity {
                 .baseUrl("https://douglascabral.com.br/aula-api/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
+
+        RetrofitContatosInterface api = retrofit.create(RetrofitContatosInterface.class);
     }
 
 

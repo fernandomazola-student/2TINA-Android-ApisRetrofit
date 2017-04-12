@@ -13,5 +13,5 @@ public interface RetrofitContatosInterface {
 
     @GET("contatos.php")
     Call<List<Contato>> getContatos();
-    
+
 }
