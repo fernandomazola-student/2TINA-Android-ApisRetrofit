@@ -13,12 +13,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
         Retrofit retrofit = new Retrofit.Builder()
                 .baseUrl("https://douglascabral.com.br/aula-api/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
-
     }
 
 
