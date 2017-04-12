@@ -3,6 +3,7 @@ package br.com.fiap.a2tina_android_apisretrofit;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.Toast;
 
 import java.util.List;
 
@@ -37,7 +38,8 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onFailure(Call<List<Contato>> call, Throwable t) {
-
+                Log.d("CONTATO", "Deu erro!");
+                Toast.makeText(MainActivity.this, "Deu erro!" + t.getMessage(), Toast.LENGTH_SHORT).show();
             }
         });
     }
